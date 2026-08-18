@@ -6,22 +6,110 @@
   <title>Uniqueman Men's Wear | Exclusive Clothing Outlet Delhi</title>
   <meta name="description" content="Exclusive men's clothing outlet in Jhilmil, Delhi. Premium shirts, trousers, jackets & more. Pre-book your favorites.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-enhanced {
+      position: relative; min-height: 85vh; display: flex; align-items: center;
+      background: linear-gradient(135deg, #3E2723 0%, #6F4518 40%, #A67C52 100%);
+      overflow: hidden; color: white; text-align: left;
+    }
+    .hero-enhanced::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80') center/cover; opacity: 0.25;
+    }
+    .hero-enhanced::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(62,39,35,0.92) 0%, rgba(62,39,35,0.6) 60%, transparent 100%);
+    }
+    .hero-enhanced .hero-content {
+      position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: 4rem 1.5rem; text-align: left;
+    }
+    .hero-enhanced .badge-tag {
+      display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+      padding: 0.35rem 1rem; border-radius: 30px; font-size: 0.85rem; letter-spacing: 0.05em;
+      margin-bottom: 1.25rem; backdrop-filter: blur(4px);
+    }
+    .hero-enhanced h1 { color: white; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.15; margin-bottom: 1.25rem; max-width: 640px; }
+    .hero-enhanced p { color: rgba(255,255,255,0.9); font-size: 1.15rem; max-width: 480px; margin-bottom: 2rem; }
+    .hero-enhanced .hero-btns { justify-content: flex-start; }
+    .hero-enhanced .btn-primary { background: #F5EDE0; color: #3E2723; }
+    .hero-enhanced .btn-primary:hover { background: white; }
+    .hero-enhanced .btn-outline { border-color: rgba(255,255,255,0.7); color: white; }
+    .hero-enhanced .btn-outline:hover { background: white; color: #3E2723; }
+    .hero-stats { display: flex; gap: 2.5rem; margin-top: 3rem; flex-wrap: wrap; }
+    .hero-stats div { text-align: left; }
+    .hero-stats strong { display: block; font-size: 1.8rem; font-weight: 700; }
+    .hero-stats span { font-size: 0.9rem; opacity: 0.8; }
+    .category-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .category-card {
+      background: white; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
+      transition: var(--transition); text-align: center;
+    }
+    .category-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+    .category-card img { width: 100%; height: 160px; object-fit: cover; }
+    .category-card h3 { padding: 1rem; font-size: 1.05rem; }
+    .promo-banner {
+      background: linear-gradient(90deg, #8B5A2B, #A67C52); color: white; text-align: center;
+      padding: 1rem; font-weight: 500; font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .hero-enhanced { min-height: 70vh; text-align: center; }
+      .hero-enhanced .hero-content { text-align: center; }
+      .hero-enhanced .hero-btns { justify-content: center; }
+      .hero-stats { justify-content: center; gap: 1.5rem; }
+      .hero-stats div { text-align: center; }
+    }
+  </style>
 </head>
 <body>
   <div id="header"></div>
 
-  <section class="hero">
+  <div class="promo-banner">
+    ✨ Exclusive Pre-Booking Open • Visit us at Jhilmil, Delhi • Free styling advice on WhatsApp
+  </div>
+
+  <section class="hero-enhanced">
     <div class="hero-content">
-      <h1>Exclusive Men's Wear<br>for the Modern Gentleman</h1>
-      <p>Discover premium shirts, trousers, jackets and more at Uniqueman — your exclusive clothing destination in Jhilmil, Delhi. Pre-book now & pick up in-store.</p>
+      <div class="badge-tag">#EXCLUSIVE Men's Clothing Outlet</div>
+      <h1>Premium Men's Wear<br>for Every Occasion</h1>
+      <p>Curated shirts, trousers, jackets & more. Pre-book online and pick up at our Jhilmil store. Limited pieces. Maximum style.</p>
       <div class="hero-btns">
         <a href="products.html" class="btn btn-primary">Shop Collection</a>
         <a href="contact.html" class="btn btn-outline">Visit Store</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>12+</strong><span>Exclusive Styles</span></div>
+        <div><strong>100%</strong><span>Quality Checked</span></div>
+        <div><strong>Delhi</strong><span>Jhilmil Location</span></div>
       </div>
     </div>
   </section>
 
   <section class="section">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-subtitle">Find exactly what you're looking for</p>
+      <div class="category-cards">
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=300&fit=crop" alt="Shirts" onerror="this.src='https://via.placeholder.com/400x300/E8D5B7/8B5A2B?text=Shirts'">
+          <h3>Shirts</h3>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400&h=300&fit=crop" alt="Trousers" onerror="this.src='https://via.placeholder.com/400x300/E8D5B7/8B5A2B?text=Trousers'">
+          <h3>Trousers</h3>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=300&fit=crop" alt="Jackets" onerror="this.src='https://via.placeholder.com/400x300/E8D5B7/8B5A2B?text=Jackets'">
+          <h3>Jackets</h3>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400&h=300&fit=crop" alt="T-Shirts" onerror="this.src='https://via.placeholder.com/400x300/E8D5B7/8B5A2B?text=T-Shirts'">
+          <h3>T-Shirts</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--coffee-100);">
     <div class="container">
       <h2 class="section-title">Featured Collection</h2>
       <p class="section-subtitle">Handpicked styles ready for pre-booking</p>
@@ -32,31 +120,39 @@
     </div>
   </section>
 
-  <section class="section" style="background: var(--coffee-100);">
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Why Uniqueman?</h2>
+      <h2 class="section-title">Why Shop at Uniqueman?</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:2rem">
-        <div style="background:white;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:var(--shadow)">
-          <div style="font-size:2rem;margin-bottom:0.5rem">✨</div>
+        <div style="background:white;padding:1.75rem;border-radius:14px;text-align:center;box-shadow:var(--shadow)">
+          <div style="font-size:2.2rem;margin-bottom:0.6rem">✨</div>
           <h3 style="margin-bottom:0.5rem">Exclusive Designs</h3>
-          <p style="color:var(--coffee-600);font-size:0.95rem">Curated men's wear you won't find everywhere. Limited pieces, maximum style.</p>
+          <p style="color:var(--coffee-600);font-size:0.95rem">Limited pieces you won't find in every market. Quality over quantity.</p>
         </div>
-        <div style="background:white;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:var(--shadow)">
-          <div style="font-size:2rem;margin-bottom:0.5rem">📅</div>
+        <div style="background:white;padding:1.75rem;border-radius:14px;text-align:center;box-shadow:var(--shadow)">
+          <div style="font-size:2.2rem;margin-bottom:0.6rem">📅</div>
           <h3 style="margin-bottom:0.5rem">Easy Pre-Booking</h3>
-          <p style="color:var(--coffee-600);font-size:0.95rem">Reserve your size online and pick up at our Jhilmil store at your convenience.</p>
+          <p style="color:var(--coffee-600);font-size:0.95rem">Reserve your size online. Pick up at our store when convenient.</p>
         </div>
-        <div style="background:white;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:var(--shadow)">
-          <div style="font-size:2rem;margin-bottom:0.5rem">📍</div>
+        <div style="background:white;padding:1.75rem;border-radius:14px;text-align:center;box-shadow:var(--shadow)">
+          <div style="font-size:2.2rem;margin-bottom:0.6rem">📍</div>
           <h3 style="margin-bottom:0.5rem">Prime Location</h3>
           <p style="color:var(--coffee-600);font-size:0.95rem">B-210, 1st Floor, Jhilmil — Near Garam Masala, Delhi 110095.</p>
         </div>
-        <div style="background:white;padding:1.5rem;border-radius:12px;text-align:center;box-shadow:var(--shadow)">
-          <div style="font-size:2rem;margin-bottom:0.5rem">💬</div>
+        <div style="background:white;padding:1.75rem;border-radius:14px;text-align:center;box-shadow:var(--shadow)">
+          <div style="font-size:2.2rem;margin-bottom:0.6rem">💬</div>
           <h3 style="margin-bottom:0.5rem">Personal Service</h3>
-          <p style="color:var(--coffee-600);font-size:0.95rem">Call or WhatsApp us for styling advice, sizes & availability.</p>
+          <p style="color:var(--coffee-600);font-size:0.95rem">Call or WhatsApp for styling advice, sizes & real-time availability.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--coffee-800); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; margin-bottom: 0.75rem;">Ready to upgrade your wardrobe?</h2>
+      <p style="opacity: 0.9; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">Browse the full collection and pre-book your favorites today.</p>
+      <a href="products.html" class="btn" style="background: #F5EDE0; color: #3E2723;">Explore Collection</a>
     </div>
   </section>
 
@@ -66,8 +162,6 @@
   <script>
     document.getElementById('header').innerHTML = renderHeader('home');
     document.getElementById('footer').innerHTML = renderFooter();
-
-    // Featured: first 4 in-stock products
     const featured = getProducts().filter(p => p.stock > 0).slice(0, 4);
     document.getElementById('featured-products').innerHTML = featured.map(renderProductCard).join('');
   </script>
